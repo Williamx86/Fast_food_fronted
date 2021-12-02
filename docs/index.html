@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styel.css">
   <title>Maurita</title>
 </head>
@@ -33,35 +34,40 @@
       <img class="menu_hamburguesa" src="img/menu_azul.svg">
       <img class="logo_azul_movil" src="img/logo_movil.svg">
       <div class="redes_sociales_principal">
-        <a href="#">
+        <a target="_blank" href="https://www.facebook.com/MauritaSV">
           <img class="red_1" src="img/facebook_azul.svg">
         </a>
-        <a href="#">
+        <a target="_blank" href="https://www.instagram.com/mauritasv/">
           <img class="red_2" src="img/ig_azul.svg">
         </a>
-        <a href="#">
+        <a target="_blank" href="https://twitter.com/mauritassv?lang=es">
           <img class="red_3" src="img/twitter_azul.svg">
         </a>
       </div>
     </div>
   </div>
 
-  <div class="full-screen">
+  <div id="Inicio" class="full-screen">
     <video src="video/inicio.m4v" autoplay loop muted playsinline></video>
   </div>
 
-  <div class="seccion_uno">
+  <div id="Menu" class="seccion_uno">
     <div class="container">
       <div class="row justify-content-around">
 
         <div class="col-12">
-          <img class="nuestro" src="img/nuestro.svg" alt="">
+          <p class="mi_menu">
+            Nuestro
+          </p>
+          <p class="mi_menu_dos">
+            Menú
+          </p>
         </div>
 
         <div class="col-10 col-md-6">
           <div class="opciones_nuestro_menu">
-            <img src="img/menu1.jpg" alt="">
-            <a class="btn_naranja" href="#">
+            <img src="img/menu1.jpg" data-aos="fade-right" alt="">
+            <a class="btn_naranja" data-aos="fade-up-right" href="menu.html">
               <span>Mercadito</span>
             </a>
           </div>
@@ -69,8 +75,8 @@
 
         <div class="col-10 col-md-6">
           <div class="opciones_nuestro_menu">
-            <img src="img/menu2.jpg" alt="">
-            <a class="btn_naranja" href="#">
+            <img src="img/menu2.jpg" data-aos="fade-left" alt="">
+            <a class="btn_naranja" data-aos="fade-up-left" href="menu.html">
               <span>Restaurantes</span>
             </a>
           </div>
@@ -80,7 +86,7 @@
     </div>
   </div>
 
-  <div class="seccion_dos">
+  <div id="Historia" class="seccion_dos">
     <div class="slider_home">
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -115,26 +121,26 @@
       </div>
     </div>
     <div class="nustra_historia">
-      <h2>Nuestra Historia</h2>
-      <p>
+      <h2 data-aos="zoom-in">Nuestra Historia</h2>
+      <p data-aos="flip-up">
         Aproximadamente en julio de 1985, empecé con una de mis hermanas a vender mariscos de manera ambulante, hasta
         que un día me prestó 200 (colones) para que comenzara a trabajar por mi propia cuenta.
         <br><br>
         Viajaba desde Apopa, y pasaba comprando al mercado La Tiendona mariscos para venderlos en Ciudad Merliot , en
         ocasiones me bajaban de los buses por el olor a mariscos y decían “Ahi viene la señora del pescado”...
       </p>
-      <a class="btn_naranja" href="#">
+      <a class="btn_naranja" href="historia.html">
         <span>Seguir leyendo</span>
       </a>
     </div>
   </div>
 
-  <div class="carousel_sucursales">
+  <div id="Sucursales" class="carousel_sucursales">
     <div class="carousel-wrap">
       <div class="owl-carousel owl-theme">
         <div class="item">
           <img class="pin_menus" src="img/pin.svg">
-          <p class="titulo_menu">Paseo del Carmen</p>
+          <p class="titulo_menu" data-aos="fade-down">Paseo del Carmen</p>
           <p class="pt-2 pb-3">
             Santa Tecla 1a Calle poniente #1-4
             Paseo El Carmen Santa Tecla
@@ -147,7 +153,7 @@
         </div>
         <div class="item">
           <img class="pin_menus" src="img/pin.svg">
-          <p class="titulo_menu">Mercadito Merliot</p>
+          <p class="titulo_menu" data-aos="fade-down">Mercadito Merliot</p>
           <p class="pt-2 pb-3">
             Av. Las Arboledas, Jardines de la Hacienda,
             Mercado Municipal de Antiguo Cuscatlán
@@ -165,7 +171,7 @@
         </div>
         <div class="item">
           <img class="pin_menus" src="img/pin.svg">
-          <p class="titulo_menu">Vía del Mar</p>
+          <p class="titulo_menu" data-aos="fade-down">Vía del Mar</p>
           <p class="pt-2 pb-3">
             Carretera al Puerto de la Libertad
             La Libertad Km 12 ½
@@ -182,7 +188,7 @@
         </div>
         <div class="item">
           <img class="pin_menus" src="img/pin.svg">
-          <p class="titulo_menu">Plaza Mundo - Soyapango</p>
+          <p class="titulo_menu" data-aos="fade-down">Plaza Mundo - Soyapango</p>
           <p class="pt-2 pb-3">
             Etapa Local
             Referencia
@@ -203,7 +209,7 @@
 
   <hr>
 
-  <div class="seccion_eventos">
+  <div id="Reservaciones" class="seccion_eventos">
     <div class="container">
       <div class="row justify-content-around">
         <div class="col-12">
@@ -219,8 +225,13 @@
             </div>
             <select class="formulario_grande" name="select">
               <option value="value1" selected>Tipo de evento</option>
-              <option value="value2">Value 1</option>
-              <option value="value3">Value 3</option>
+              <option value="value2">Cumpleaños</option>
+              <option value="value3">Bodas</option>
+              <option value="value3">Graduaciones</option>
+              <option value="value3">Baby Shower</option>
+              <option value="value3">Eventos ejecutivos</option>
+              <option value="value3">Reuniones Familiares</option>
+              <option value="value3">Despedidas de solter@</option>
             </select>
           </form>
 
@@ -264,9 +275,9 @@
           </form>
           <div class="imagen_anidada_dos pt-3">
             <img src="img/correo.svg" alt="">
-            <p>Envía tu CV a: 
+            <p>Envía tu CV a:
               <br>
-            rrhh1@restaurantemaurita.com.sv</p>
+              rrhh1@restaurantemaurita.com.sv</p>
           </div>
         </div>
 
@@ -307,7 +318,7 @@
   </footer>
 
   <div class="copy">
-    <p>2021  Todos los derechos reservados.</p>
+    <p>2021 Todos los derechos reservados.</p>
   </div>
 
   <div class="menu_movil_cont aparecer">
@@ -316,27 +327,27 @@
         <div class="opciones">
           <ul>
             <li>
-              <a href="#">
+              <a href="#Inicio">
                 <p>Inicio</p>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#Menu">
                 <p>Menú</p>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#Historia">
                 <p>Historia</p>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#Reservaciones">
                 <p>Reservaciones</p>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#Sucursales">
                 <p>Sucursales</p>
               </a>
             </li>
@@ -355,6 +366,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     $('.owl-carousel').owlCarousel({
       margin: 10,
@@ -374,6 +386,9 @@
         }
       }
     });
+  </script>
+  <script>
+    AOS.init();
   </script>
   <script src="js/app.js"></script>
 
